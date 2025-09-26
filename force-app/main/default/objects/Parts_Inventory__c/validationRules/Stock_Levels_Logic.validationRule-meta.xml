@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stock_Levels_Logic</fullName>
+    <active>true</active>
+    <description>Current stock cannot be negative and minimum stock must be positive</description>
+    <errorConditionFormula>OR(
+  Current_Stock__c &lt; 0,
+  Minimum_Stock__c &lt;= 0
+)</errorConditionFormula>
+    <errorMessage>Current stock cannot be negative and minimum stock must be greater than zero</errorMessage>
+</ValidationRule>

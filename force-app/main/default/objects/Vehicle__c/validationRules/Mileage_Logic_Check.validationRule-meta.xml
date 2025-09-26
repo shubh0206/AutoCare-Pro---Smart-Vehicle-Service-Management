@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mileage_Logic_Check</fullName>
+    <active>true</active>
+    <description>Current mileage cannot be negative</description>
+    <errorConditionFormula>Mileage__c &lt; 0</errorConditionFormula>
+    <errorDisplayField>Mileage__c</errorDisplayField>
+    <errorMessage>Vehicle mileage cannot be negative</errorMessage>
+</ValidationRule>
